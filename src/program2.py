@@ -10,6 +10,7 @@ samohlasky = ['a','e','i','o','u','y']
 spoluhlasky = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z']
 
 for i in range(len(text)):
+    
     if samohlasky.count(text[i].lower()) > 0:
         file_samo.write(text[i])
         file_spolu.write(' ')
