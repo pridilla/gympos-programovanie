@@ -39,7 +39,16 @@ def add(i):
     zoznam[i][1] += 1
     celkovy_pocet += 1
     update(zoznam)
+    file_update()
 
+def file_update():
+    suborr = open('../lib/anketa.txt', 'w', encoding="cp1250")
+    suborr.write(otazka)
+    for i in range(len(zoznam)):
+        for j in range(len(zoznam[i])):
+            suborr.write("\n")
+            suborr.write(str(zoznam[i][j]))
+    suborr.close()
 
 zoznam = []
 while True:
