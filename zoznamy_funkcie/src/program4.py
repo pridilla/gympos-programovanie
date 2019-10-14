@@ -16,6 +16,7 @@ for i in range(6):
 def vypisSkore():
     for i in range(6):
         print ("Hráč " + str(i+1) + " má zatiaľ počet bodov " + str(skore[i]) + ".")
+        print("Pre ukončenie hry zadajte koniec.")
 
 def koniec():
     global kon
