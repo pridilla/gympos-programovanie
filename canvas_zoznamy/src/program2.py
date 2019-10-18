@@ -13,9 +13,13 @@ while True:
     data_short = line.split(' ')
 
     vysledky = []
+    spol = 0
     for i in range(5):
         vysledky.append(int(data_short[2+i]))
+        spol += vysledky[i]
     najvyssie = max(vysledky)
+    priemer = spol/5
+    print(data_short[0] + " skočil priemerne " + str(priemer) + ".")
 
     data_later = [data_short[0], data_short[1], najvyssie]
     data.append(data_later)
@@ -24,6 +28,12 @@ while True:
 
 zoznam_krajin = list(dict.fromkeys(krajiny))
 print("Zucastnilo sa " + str(len(zoznam_krajin)) + " krajin.\n")
+
+print("Zapojené krajiny: ")
+for i in zoznam_krajin:
+    print(i, end = " ")
+
+print("\n")
 
 for i in zoznam_krajin:
     print("Z " + i + " sa zucastnilo " + str(krajiny.count(i)) + " ucastnikov.")

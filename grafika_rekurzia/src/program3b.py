@@ -1,11 +1,12 @@
 import tkinter, math
-canvas = tkinter.Canvas(width = 500, height = 500)
+r = 500
+canvas = tkinter.Canvas(width = r, height = r)
 canvas.pack()
 
-KORYTNACKA = [100,100, 0]
+KORYTNACKA = [r/2,r/2,0]
 
 def uhol(x):
-    return 2*math.pi/360
+    return x*2*math.pi/360
 
 def nastavPoziciu(x,y):
     KORYTNACKA[0] = x
@@ -20,5 +21,17 @@ def chod(x):
 
     a2 = a1 + x*math.cos(KORYTNACKA[2])
     b2 = b1 + x*math.sin(KORYTNACKA[2])
+
+    canvas.create_line(a1,b1,a2,b2)
+    nastavPoziciu(a2,b2)
+
+def krok(x):
+    if(x > r):
+        return 0
+    chod(x)
+    posunUhol(uhol(90))
+    krok(x+4)
+
+krok(0)
 
 canvas.mainloop()
