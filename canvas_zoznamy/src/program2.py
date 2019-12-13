@@ -19,7 +19,7 @@ while True:
         spol += vysledky[i]
     najvyssie = max(vysledky)
     priemer = spol/5
-    print(data_short[0] + " skočil priemerne " + str(priemer) + ".")
+    print(data_short[0] + " skočil premerne " + str(priemer) + ".")
 
     data_later = [data_short[0], data_short[1], najvyssie]
     data.append(data_later)
