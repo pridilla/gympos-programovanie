@@ -1,0 +1,11 @@
+Počet slov s dĺžkou 1: 11
+Počet slov s dĺžkou 2: 13
+Počet slov s dĺžkou 3: 35
+Počet slov s dĺžkou 4: 29
+Počet slov s dĺžkou 5: 21
+Počet slov s dĺžkou 6: 13
+Počet slov s dĺžkou 7: 8
+Počet slov s dĺžkou 8: 5
+Počet slov s dĺžkou 9: 0
+Počet slov s dĺžkou 10: 0
+Počet slov s dĺžkou 11: 1
