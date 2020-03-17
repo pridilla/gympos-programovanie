@@ -1,0 +1,5 @@
+50
+20 0 Sturovo namestie
+35 0 Mestky park
+10 20 Dargovska
+40 20 Nemocnicna
